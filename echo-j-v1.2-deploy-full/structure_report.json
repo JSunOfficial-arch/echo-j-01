@@ -1,0 +1,23 @@
+{
+  "version": "v1.2",
+  "personality": "Echo-J",
+  "features": {
+    "reasoning": true,
+    "retry_adaptivity": true,
+    "memory_sync": "GitHub + Local Failover",
+    "formatting": "Markdown Log Formatter"
+  },
+  "modules": [
+    "memory_writer.py",
+    "failover_sync.py",
+    "log_formatter.py",
+    "scripts/run_echo_with_log.sh"
+  ],
+  "repo_linked": "https://github.com/JSunOfficial-arch/echo-j-01",
+  "env_file": ".env (confirmed present)",
+  "next_steps": [
+    "嵌入模型輸出對應 formatter 模組",
+    "加入對話 loop（auto capture）",
+    "設計人格體輸出風格 API"
+  ]
+}
